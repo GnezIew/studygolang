@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <p>Apple Products</p>
+        <p>{{ range . }}</p>
+        <p>{{ .Name }} :{{ .Price}}</p>
+        {{ else }}
+        <p>No Products</p>
+        {{ end }}
+    </div>
+</body>
+</html>

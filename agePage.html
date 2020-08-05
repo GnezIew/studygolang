@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Your age is :{{ .Age }}</h1>
+    <p>{{ if .GreaterThan60 }}</p>
+    <p>Old People !</p>
+    <p>{{ else if .GreaterThan40}}</p>
+    <p>Middle Aged</p>
+    <p>{{ else }}</p>
+    <p>Young!</p>
+    <p>{{ end }}</p>
+</body>
+</html>
